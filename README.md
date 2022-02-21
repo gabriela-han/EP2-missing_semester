@@ -1,4 +1,4 @@
-# GSP - EP2
+# EP2-missing_semester
 
 Olá, dev! Esse é o repositório de um dos possíveis EPs que vocês podem fazer ao final do curso!
 
@@ -45,6 +45,6 @@ Por ultimo, para rodar o programa você pode utilizar os mesmos argumentos passa
 	- No `Makefiles`:
 		- [ ] Fazer um alvo e as configurações necessárias para rodar o `generate_input.sh` automaticamente
 	- [ ] Utilizar um dos 3 editores de texto expostos nas aulas
-	- [ ] Utilizar o GitHub para hospedar o EP e registrar o progresso em commits
+	- [X] Utilizar o GitHub para hospedar o EP e registrar o progresso em commits
 	- [ ] Utilizar o recurso de CI/CD do GitHub para verificar bugs e memory leaks no código
-# EP2-missing_semester
+
