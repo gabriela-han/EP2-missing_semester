@@ -44,7 +44,7 @@ Por ultimo, para rodar o programa você pode utilizar os mesmos argumentos passa
 - Tarefas bônus:
 	- No `Makefiles`:
 		- [ ] Fazer um alvo e as configurações necessárias para rodar o `generate_input.sh` automaticamente
-	- [ ] Utilizar um dos 3 editores de texto expostos nas aulas
+	- [X] Utilizar um dos 3 editores de texto expostos nas aulas
 	- [X] Utilizar o GitHub para hospedar o EP e registrar o progresso em commits
 	- [ ] Utilizar o recurso de CI/CD do GitHub para verificar bugs e memory leaks no código
 
