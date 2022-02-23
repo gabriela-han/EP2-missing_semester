@@ -20,7 +20,7 @@ char* join_path(const char* directory, const char* filename)
 	}
 
 	char* path_format =
-	    (directory[strlen(directory) - 1] == '/') ? "%s/%s" : "%s%s";
+	    (directory[strlen(directory) - 1] != '/') ? "%s/%s" : "%s%s";
 
 	sprintf(realpath, path_format, directory, filename);
 	return realpath;
@@ -56,7 +56,6 @@ void find_matching_files()
 {
 	static int dir_index = 0;
 	static char* current_entry_name;
-	++dir_index;
 
 	DIR* input_dir = opendir(input_dirs[dir_index]);
 	if (!input_dir) {
@@ -78,12 +77,15 @@ void find_matching_files()
 			printf("Found matching file %s\n", current_entry_name);
 			merge_files(current_entry_name);
 		}
-		else
-			find_matching_files();
-	}
 
+		else{
+			++dir_index;
+			find_matching_files();
+			--dir_index;
+		}	
+	}
+	
 	closedir(input_dir);
-	--dir_index;
 }
 
 int main(int argc, char* argv[])

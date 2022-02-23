@@ -33,7 +33,7 @@ Por ultimo, para rodar o programa você pode utilizar os mesmos argumentos passa
 ## Tarefas
 
 - No código em `src/main.c`:
-	- [ ] Arrumar o bug
+	- [X] Arrumar o bug
 	- [ ] Arrumar o memory leak
 - No `generate_input.sh`:
 	- [ ] Modificar o script para suportar múltiplos arquivos como entrada (em vez de somente 2)
