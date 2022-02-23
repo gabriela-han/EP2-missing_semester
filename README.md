@@ -34,7 +34,7 @@ Por ultimo, para rodar o programa você pode utilizar os mesmos argumentos passa
 
 - No código em `src/main.c`:
 	- [X] Arrumar o bug
-	- [ ] Arrumar o memory leak
+	- [X] Arrumar o memory leak
 - No `generate_input.sh`:
 	- [ ] Modificar o script para suportar múltiplos arquivos como entrada (em vez de somente 2)
 - Com relação à performance:

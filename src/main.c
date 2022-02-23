@@ -48,6 +48,8 @@ void merge_files(const char* filename)
 		}
 		dump_file_into_file(file, out_file);
 		close(file);
+		free(filepath);
+		free(out_filepath);
 	}
 	close(out_file);
 }
