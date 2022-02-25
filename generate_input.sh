@@ -1,7 +1,8 @@
 #!/bin/bash
 
-NUM_OF_FILES=$((1000 * 8))
+NUM_OF_FILES=$((8*90))
 FILE_SIZE_IN_KB=1
+declare -a input
 
 populate_dir() {
 	DIR=$1
@@ -14,8 +15,14 @@ populate_dir() {
 }
 
 populate_dirs() {
-	populate_dir $1
-	populate_dir $2
+	dir=($@)
+	tam=$(($#-1))	
+	
+	for ((x=0; x<tam; x++))
+	do
+		populate_dir ${dir[$x]}
+		#echo ${dir[$x]}
+	done
 }
 
 setup() {
@@ -23,12 +30,12 @@ setup() {
 	mkdir $*
 }
 
-if [ $# != 3 ]
+if [ $# -le 2 ]
 then
-	echo "Usage: $0 <input1> <input2> <output>"
+	echo "it's necessary to have at least three arguments: two inputs and one output :)"
 	exit 0
 fi
 
 setup $*
-populate_dirs $1 $2
+populate_dirs $@
 echo Done

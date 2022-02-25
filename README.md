@@ -36,7 +36,7 @@ Por ultimo, para rodar o programa você pode utilizar os mesmos argumentos passa
 	- [X] Arrumar o bug
 	- [X] Arrumar o memory leak
 - No `generate_input.sh`:
-	- [ ] Modificar o script para suportar múltiplos arquivos como entrada (em vez de somente 2)
+	- [X] Modificar o script para suportar múltiplos arquivos como entrada (em vez de somente 2)
 - Com relação à performance:
 	- Identificar gargalos de performance no programa quando...
 		- [ ] tem vários arquivos pequenos como entrada, em varios diretórios diferentes
