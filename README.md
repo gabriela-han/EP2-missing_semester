@@ -39,12 +39,11 @@ Por ultimo, para rodar o programa você pode utilizar os mesmos argumentos passa
 	- [X] Modificar o script para suportar múltiplos arquivos como entrada (em vez de somente 2)
 - Com relação à performance:
 	- Identificar gargalos de performance no programa quando...
-		- [ ] tem vários arquivos pequenos como entrada, em varios diretórios diferentes
-		- [ ] tem arquivos muito grandes como entrada
+		- [X] tem vários arquivos pequenos como entrada, em varios diretórios diferentes
+		- [X] tem arquivos muito grandes como entrada
 - Tarefas bônus:
 	- No `Makefiles`:
 		- [ ] Fazer um alvo e as configurações necessárias para rodar o `generate_input.sh` automaticamente
 	- [X] Utilizar um dos 3 editores de texto expostos nas aulas
-	- [X] Utilizar o GitHub para hospedar o EP e registrar o progresso em commits
+	- [X] Utilizar o GitHub para hospedar o EP e registrar o progresso em commits: https://github.com/gabriela-han/EP2-missing_semester
 	- [ ] Utilizar o recurso de CI/CD do GitHub para verificar bugs e memory leaks no código
-
